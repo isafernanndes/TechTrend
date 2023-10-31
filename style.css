@@ -1,0 +1,128 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+header{
+    height: 160px;
+    padding: 10px, 100px;
+    position: relative;
+    display: absolute;
+    text-align: right;
+    background: transparent;
+    justify-content: space-between;
+    z-index: 99;
+    margin-top: 15px;
+}
+
+body{
+    background:  linear-gradient(to right, #fff 0%, #fff 50%, #93B4DB 50%, #93B4DB 100%);
+}
+
+.logo{
+    color: #D0E4AE;
+    margin-left: 140px;
+    top: 400px;
+    width: 45%;
+}
+
+.navegação a{
+    position: relative;
+    font-size: 1.0em;
+    color: #194b32;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 40px;
+}
+
+.navegação a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #194b32;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navegação a:hover::after{
+    transform: scaleX(1);
+}
+
+.navegação .btnLogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #194b32;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .4s;
+}
+
+.navegação .btnLogin-popup:hover {
+    background-color: #D0E4AE;
+}
+
+.navegação .btnCadastro-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #194b32;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .4s;
+}
+
+.navegação .btnCadastro-popup:hover {
+    background-color: #D0E4AE;
+}
+
+.footer{
+    text-align: right;
+    float: right;
+    display: absolute;
+}
+
+.next{
+    width: 100px;
+    height: 50px;
+    background: transparent;
+    border-radius: 20px;
+    outline: none;
+    position: relative;
+    right: 280px;
+    top: 80px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #194b32;
+    font-weight: 500;
+    transition: .4s;
+    float: right;
+}
+
+.h3{
+    position: absolute;
+    right: 168px;
+    top: 300px;
+}
+
+.sobre{
+    right: 150px;
+    position: absolute;
+    text-align: center;
+    top: 350px;
+}
+
